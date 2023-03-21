@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>DIemployment </title>
+  </head>
+  <body>
+  <h1 style = "position:absolute; left:600px; top:-20px; font-family:georgia; font-style:italic;  background-color:#95B9C7;">
+          <%=jobName%> 
+    </h1>
+  <p style = "position: absolute; left:685px; top:35px;">Job List: </p>
+  <ul style = "position:absolute; top:70px; ">
+                                                                                                                                               
+                                                                                                                                               
+     <% for(let i = 0; i < availableJobs.length; i++) { %>
+         <li > Job Role: <%= availableJobs[i]['role'] %> | Job Type: <%= availableJobs[i]['type'] %> | Description: <%= availableJobs[i]['Descr
+iption'] %> | Start Date:
+   <%= availableJobs[i]['start'] %>
+   </li>
+         <% } %>
+    </ul>
+                                                                                                                                               
+                                                                                                                                               
+   <button style = "position:absolute; left:465px; top:50px;" onClick="previous()" 
+        id="backward">back
+         </button>
+   <script>
+   function previous() {
+            window.history.back();
+        }
+    </script>
+                                                                                                                                               
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+     <h1 style = "position:absolute; left:600px; top:-20px; font-family:georgia; font-style:italic;  background-color:#95B9C7;">
+         <%=jobName%>
+    </h1>
+    </head>
+                                                                                                                                               
+     <p style = "position:absolute; top:85; left:560;">Enter the job information below and post! </p>
+
+                                                                                                                                               
+       <form method="POST" action="/jobadded">
+      <p style = "position:absolute; left:470px; top:155px;">Job Role:<input id="role" type="text" name="role" /></p>
+      <p style = "position:absolute; left:470px; top:200px;">Job Type:<input id="type" type="text" name="type" /></p>
+      <p style = "position:absolute; left:470px; top:245px;">Job Description:<input id="Description" type="Long Text" name="Description" /></p>
+      <p style = "position:absolute; left:470px; top:290px;">Start Date:<input id="start" type="date" name="start" /></p>
+                                                                                                                                               
+       <input style = "position:absolute; left:470px; top:350px;" type="submit" value="Post Job"/>
+       </form>
+                                                                                                                                               
+   <button style = "position:absolute; left:465px; top:50px;" onClick="previous()" 
+        id="backward">back
+         </button>
+   <script>
+   function previous() {
+            window.history.back();
+        }
+    </script>
+                                                                                                                                               
+   <img src="https://ravenrecruit.com/wp-content/uploads/2021/11/Post-Job-Vacancy.png" alt="Add job" style="
+position:relative; 
+ left:770px; top:150px;width:300px;height:250px;">
+                                                                                                                                               
+   </body>
+  </html>

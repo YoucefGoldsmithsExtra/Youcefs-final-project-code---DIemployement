@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <h1 style = "position:absolute; left:600px; top:-20px; font-family:georgia; font-style:italic;  background-color:#95B9C7;">
+          <%=jobName%>
+    </h1>
+  </head>
+  <body>
+    <p style = "position:absolute; top:85; left:550;">Welcome Again! We look forward to seeing you. </p>
+    <form method="POST" action="/loggedin">
+        <p style = "position:absolute; top:155px; left:470px;">Username: <input id="username" type="text" name="username" value="username" /><p
+>
+        <p style = "position:absolute; top:200px; left:470px;">Password: <input id="password" type="password" name="password" value="password" 
+/></p>
+        <input style="position:absolute; top:260px; left:470px;" type="submit" value="Login" />
+      </form>
+  <button style= "position:absolute; top:50px; left:465px;" onClick="previous()" 
+        id="backward">back
+         </button>
+   <script>
+   function previous() {
+            window.history.back();
+        }
+    </script>
+                                                                                                                                               
+ <img src="https://static.vecteezy.com/system/resources/thumbnails/007/407/996/small/user-icon-person-icon-client-symbol-login-head-sign-icon-d
+esign-vector.jpg" alt="login" style="position:relative; 
+ left:770px; top:140px;width:100px;height:100px;">
+                                                                                                                                               
+  </body>
+</html>

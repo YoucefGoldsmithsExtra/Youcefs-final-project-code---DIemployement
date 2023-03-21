@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <h1 style = "position:absolute; left:600px; top:-20px; font-family:georgia; font-style:italic;  background-color:#95B9C7;">
+          <%=jobName%>
+    </h1>
+  </head>
+  <body>
+                                                                                                                                               
+        <p style= "position:absolute; top:85px; left:550px;">In order to apply for a Vacancy, please sign up below! </p>
+                                                                                                                                               
+        <p style= "position:absolute; top:150px; left:790px;">Validations: </p>
+        <p style= "position:absolute; top:170px; left:790px;"> </p>
+        <p style= "position:absolute; top:180px; left:790px;">- Password must be a min of 8 characters & include a Number </p>
+        <p style= "position:absolute; top:200px; left:790px;">- Ensure the email is in correct format </p>
+        <p style= "position:absolute; top:220px; left:790px;">- Dont miss out any fields </p>
+                                                                                                                                               
+    <form method="POST" action="/registered">
+        <p style="position:relative; top:155px; left:470px;">First name: <input id="first" type="text" name="first" value="first name" /></p>
+        <p style="position:relative; top:157px; left:470px;">Last name: <input id="last" type="text" name="last" value="last name" /></p>
+        <p style="position:relative; top:159px; left:470px;">Email: <input id="email" type="email" name="email" value="email" /></p>
+        <p style="position:relative; top:161px; left:470px;">Username: <input id="username" type="username" name="username" value="username" />
+</p>
+        <p style="position:relative; top:163px; left:470px;">Password: <input id="password" type="password" name="password" value="password" />
+</p>
+                                                                                                                                               
+        <input style="position:relative; top:170px; left:465px;" type="submit" value="Register" />
+      </form>
+  <button style="position:relative; top:-425px; left:465px;" onClick="previous()" 
+        id="backward">back
+         </button>
+   <script>
+   function previous() {
+            window.history.back();
+        }
+    </script>
+                                                                                                                                               
+   <img src="https://www.webfx.com/wp-content/uploads/2021/10/0144-01_users_sign_up_thumbnail.png" alt="register" style="position:relative; 
+ left:650px; top:30px;width:350px;height:250px;">
+                                                                                                                                               
+  </body>
+</html>
